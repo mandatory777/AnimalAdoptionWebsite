@@ -1,0 +1,138 @@
+/* Container for the form */
+.add-animal-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffbf2; /* Soft cream background */
+    border-radius: 20px; /* More rounded corners for a cute look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid #ffd5cd; /* Soft border for a playful touch */
+    position: relative;
+}
+
+/* Cute paw print in the background */
+.add-animal-form::before {
+    content: '🐾'; 
+    font-size: 100px;
+    color: rgba(255, 223, 211, 0.3); /* Light paw print for background */
+    position: absolute;
+    top: -10px;
+    right: -20px;
+}
+
+/* Slight lift effect on hover */
+.add-animal-form:hover {
+    transform: translateY(-5px);
+}
+
+/* Form title styling */
+.form-title {
+    font-family: 'Alfa Slab One', serif;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #ff6f61; /* Soft coral color */
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Individual form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #666;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+/* Input field styling */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px; /* Rounded for a friendly feel */
+    border: 2px solid #ffd5cd;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fffaf0; /* Very soft yellow for input background */
+}
+
+/* Focus state for inputs */
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.6); /* Subtle coral glow */
+    outline: none;
+}
+
+/* Button styling */
+.form-button {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2rem;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Hover effect for button */
+.form-button:hover {
+    background-color: #ff4b3a; /* Slightly darker coral */
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4b3a;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Paw prints as decoration */
+.form-group::before {
+    content: '🐾'; /* Cute paw print icon */
+    font-size: 20px;
+    position: absolute;
+    right: -30px;
+    top: 5px;
+    color: #ffd5cd; /* Light pink paw print */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .add-animal-form {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        padding: 10px;
+    }
+
+    .form-button {
+        padding: 12px;
+    }
+}

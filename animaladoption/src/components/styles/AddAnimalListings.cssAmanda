@@ -1,0 +1,110 @@
+/* Container for the animal listings */
+.listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px; /* Increased padding for more breathing space */
+    gap: 20px; /* Added gap for consistent spacing */
+    background-color: #f7f7f7; /* Subtle background color to make cards pop */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border: none; /* Removed border for cleaner look */
+    border-radius: 12px; /* Slightly larger rounding for a softer feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer and deeper shadow */
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for shadow and scale */
+    width: 320px; /* Slightly wider cards for better content display */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px); /* Smooth lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card image styling */
+.card img {
+    width: 100%; 
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures image scales well */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.3s ease; /* Smooth image hover effect */
+}
+
+/* Slight zoom on image hover */
+.card:hover img {
+    transform: scale(1.05); 
+}
+
+/* Card content styling */
+.card-content {
+    padding: 20px; /* Increased padding for more whitespace */
+    text-align: center; /* Centered text for cleaner presentation */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.6em;
+    margin: 10px 0; /* Added margin for better spacing */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700; /* Bolder for stronger title presence */
+}
+
+/* Additional info styling */
+.card-info {
+    font-size: 1.1em; 
+    color: #777; /* Softer gray for a modern look */
+    margin: 10px 0; /* Improved spacing between info and title */
+    line-height: 1.5; /* Better readability */
+}
+
+/* Button styling */
+.card-button {
+    background-color: #28a745; /* Fresh green color for better contrast */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 12px 20px; /* Added padding for a bigger, more clickable button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added button transition */
+    display: inline-block; /* Keeps the button inline */
+    margin-top: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button hover effect */
+.card-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Added margin for better spacing */
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.4em; /* Adjusted font size for mobile */
+    }
+
+    .card-info {
+        font-size: 1em;
+    }
+
+    .card-button {
+        padding: 10px 16px; /* Adjusted button size for mobile */
+    }
+}

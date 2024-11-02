@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a3d3a9, #e1f5c4, #d7f5f2); /* Fresh green and blue gradient */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.animal-listings, .add-animal, .home {
+  padding: 20px;
+}
+
+.animal-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animal-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
